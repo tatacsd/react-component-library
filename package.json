@@ -1,10 +1,10 @@
 {
-  "name": "react-component-library",
-  "version": "0.0.1",
+  "name": "@tatacsd/react-component-library",
+  "version": "0.0.5",
   "description": "React component library",
   "main": "dist/cjs/index.js",
   "scripts": {
-    "rollup": "rollup -c --bundleConfigAsCjs"
+    "rollup": "rollup -c "
   },
   "author": "Thays Casado",
   "license": "ISC",
@@ -22,5 +22,12 @@
   "files": [
     "dist"
   ],
-  "types": "commonjs"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/tatacsd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatacsd/react-component-library.git"
+  }
 }
